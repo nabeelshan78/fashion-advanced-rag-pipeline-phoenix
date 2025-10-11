@@ -1,6 +1,6 @@
 # 🛍️ Fashion Forward Hub — Intelligent RAG ChatBot  
 
-![Fashion Forward Hub](images/3.png)
+![Fashion Forward Hub](images/5.png)
 
 > **🚀 Revolutionizing E-commerce with AI-Powered Conversations**
 
@@ -11,22 +11,22 @@ Our intelligent chatbot seamlessly combines **product discovery**, **FAQ handlin
 
 ## ✨ Key Features  
 
-### 🎯 Smart Query Routing  
+### Smart Query Routing  
 - **Intelligent Classification:** Detects if queries are FAQ-related or product-specific.  
 - **Context-Aware Processing:** Routes technical vs. creative queries with precision.  
 - **Dynamic Parameter Tuning:** Adjusts LLM parameters based on query type for optimal responses.
 
-### 🔍 Advanced Product Discovery  
+### Advanced Product Discovery  
 - **Semantic Search:** Finds relevant products using vector embeddings.  
 - **Metadata Filtering:** Filters by gender, category, color, season, and usage.  
 - **Price Range Optimization:** Handles budget constraints intelligently.  
 - **Fallback Mechanisms:** Ensures relevant results even with sparse data.
 
 ### 💬 Multi-Interface Support  
-- 🖥️ **Gradio Web Interface:** Beautiful, responsive chat UI.  
-- 🧩 **Jupyter Widgets:** Interactive experimentation.  
-- 🌐 **REST API:** Full backend integration.  
-- ⚡ **Real-time Streaming:** Character-by-character response streaming.
+- **Gradio Web Interface:** Beautiful, responsive chat UI.  
+- **Jupyter Widgets:** Interactive experimentation.  
+- **REST API:** Full backend integration.  
+- **Real-time Streaming:** Character-by-character response streaming.
 
 ---
 
@@ -104,11 +104,8 @@ def get_params_for_task(task):
 
 
 ###  User Experience
-## Interactive Chat Interface
-![Fashion Forward Hub](images/5.png)
-
-## Real-time Tracing
-![Fashion Forward Hub](optimizing_chatbot/images/q1_trace_details.png)
+- Interactive Chat Interface
+- Real-time Tracing
 
 ---
 
@@ -163,7 +160,7 @@ client = weaviate.connect_to_embedded(
     }
 )
 ```
->> Tip: Modify paths or environment variables as needed for your system setup or deployment environment.
+> Modify paths or environment variables as needed for your system setup or deployment environment.
 
 ---
 
