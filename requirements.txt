@@ -1,0 +1,21 @@
+# Web Frameworks & UI
+flask
+gradio
+
+# AI & Machine Learning
+openai
+together
+weaviate-client
+numpy
+joblib
+
+# Observability & Tracing
+arize-phoenix
+opentelemetry-api
+opentelemetry-sdk
+
+# Utility Libraries
+requests
+markdown
+ipywidgets
+ipython
