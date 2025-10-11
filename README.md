@@ -193,7 +193,7 @@ client = weaviate.connect_to_embedded(
 
 ## 📁 Project Structure
 ```
-advanced-rag-pipeline-phoenix/
+fashion-advanced-rag-pipeline-phoenix/
 ├── dataset/
 │   ├── clothes_json.joblib      # Product database
 │   └── faq.joblib               # FAQ knowledge base
