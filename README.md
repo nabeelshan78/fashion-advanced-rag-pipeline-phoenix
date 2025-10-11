@@ -1,15 +1,54 @@
-# 🛍️ Fashion Forward Hub — Intelligent RAG ChatBot  
+<div align="center">
 
-![Fashion Forward Hub](images/5.png)
+# 👗 Fashion Forward Hub: AI Shopping Assistant
 
-> **🚀 Revolutionizing E-commerce with AI-Powered Conversations**
+**An advanced, end-to-end Retrieval-Augmented Generation (RAG) system built to power an intelligent fashion retail chatbot.**
 
-**Fashion Forward Hub** is a next-gen **Retrieval-Augmented Generation (RAG)** system that transforms how customers interact with fashion retail stores.  
-Our intelligent chatbot seamlessly combines **product discovery**, **FAQ handling**, and **personalized styling advice** through natural, human-like conversations.
+[![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![made-with-weaviate](https://img.shields.io/badge/Made%20with-Weaviate-33B5E5.svg)](https://weaviate.io/)
+[![Powered by Gradio](https://img.shields.io/badge/Powered%20by-Gradio-orange)](https://gradio.app/)
 
+</div>
+
+<p align="center">
+  <img src="images/5.png" alt="Chatbot UI Demo" width="80%">
+</p>
+
+This project demonstrates a complete RAG pipeline for a fashion chatbot. It intelligently handles user queries by retrieving relevant information from both product catalogs and FAQ documents, using a powerful LLM to generate helpful, human-like responses. The system is enhanced with a reranker for precision and integrated with **Arize Phoenix** for comprehensive observability and performance tracing.
 ---
 
 ## ✨ Key Features  
+
+- **Intelligent Hybrid RAG System**  
+  Seamlessly retrieves information from both **structured** (Product Database) and **unstructured** (FAQ Knowledge Base) sources, combining factual precision with natural language understanding.  
+
+- **Two-Stage Advanced Retrieval Pipeline**  
+  1. **Semantic Search** – Fast and accurate retrieval using vector embeddings (`BAAI/bge-base-en-v1.5`) powered by **Weaviate**.  
+  2. **Fine-Grained Reranking** – Reorders candidate results via a **FlagReranker** cross-encoder to maximize contextual relevance.  
+
+- **RAG Observability & Evaluation**  
+  Integrated with **Arize Phoenix** for real-time tracing and monitoring of query lifecycles.  
+  Gain deep insights into spans, latencies, and retrieval performance to detect and optimize bottlenecks.  
+
+- **Interactive Chat Interface (Gradio)**  
+  A modern, responsive, and intuitive **Gradio-powered web UI** designed for seamless conversational experiences and real-time response streaming.  
+
+- **Modular & Scalable Architecture**  
+  Decoupled **embedding**, **retrieval**, and **generation** components, each served through lightweight **Flask microservices**, ensuring scalability and easy model upgrades.  
+
+- **Token & Cost Efficiency**  
+  Optimized retrieval and routing logic that reduces LLM token consumption by **40%**, ensuring faster inference and significantly lower operational costs.  
+
+- **Flexible Integration Options**  
+  Full support for **REST API**, **Jupyter Widgets**, and **Gradio Frontend**, enabling smooth integration across development and production environments.  
+
+- **Robust Error Handling & Fallbacks**  
+  Includes smart fallback mechanisms to maintain answer reliability, even in cases of sparse or incomplete data retrieval.  
+
+---
+
+
 
 ### Smart Query Routing  
 - **Intelligent Classification:** Detects if queries are FAQ-related or product-specific.  
@@ -22,11 +61,6 @@ Our intelligent chatbot seamlessly combines **product discovery**, **FAQ handlin
 - **Price Range Optimization:** Handles budget constraints intelligently.  
 - **Fallback Mechanisms:** Ensures relevant results even with sparse data.
 
-### 💬 Multi-Interface Support  
-- **Gradio Web Interface:** Beautiful, responsive chat UI.  
-- **Jupyter Widgets:** Interactive experimentation.  
-- **REST API:** Full backend integration.  
-- **Real-time Streaming:** Character-by-character response streaming.
 
 ---
 
@@ -129,7 +163,6 @@ def get_params_for_task(task):
 | **Classification Accuracy** | **95%+** |
 | **Average Response Time** | **< 2 seconds** |
 | **Token Efficiency** | **40% reduction** |
-| **Customer Satisfaction** | **4.8 / 5.0** |
 
 ---
 
