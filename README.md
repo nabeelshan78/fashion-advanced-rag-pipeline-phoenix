@@ -98,6 +98,16 @@ graph TB
 
 ---
 
+### 📊 Key Performance Metrics  
+
+| **Metric** | **Result** |
+|-------------|------------|
+| **Classification Accuracy** | **95%+** |
+| **Average Response Time** | **< 2 seconds** |
+| **Token Efficiency** | **40% reduction** |
+
+---
+
 ### Cost Management
 <img src="optimizing_chatbot/images/faq_prod_labeling_token_comp.png" alt="Cost Management" width="900"/>
 
@@ -137,13 +147,6 @@ def get_params_for_task(task):
 ---
 
 
-###  User Experience
-- Interactive Chat Interface
-- Real-time Tracing
-
----
-
-
 ## 📈 Business Impact  
 
 ### Customer Experience  
@@ -155,17 +158,7 @@ def get_params_for_task(task):
 - **40% Token Cost Reduction** via optimized pipelines  
 - **Sub-second Retrieval & Generation** for faster responses  
 - **Scalable Architecture** built to handle high-traffic environments  
-
-### 📊 Key Performance Metrics  
-
-| **Metric** | **Result** |
-|-------------|------------|
-| **Classification Accuracy** | **95%+** |
-| **Average Response Time** | **< 2 seconds** |
-| **Token Efficiency** | **40% reduction** |
-
 ---
-
 
 
 ## 🔧 Advanced Configuration  
