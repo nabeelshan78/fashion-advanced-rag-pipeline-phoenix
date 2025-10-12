@@ -128,6 +128,15 @@ To address this, I engineered a "Simplified" pipeline that operates in parallel,
 
 The shift to a hybrid approach yielded significant, measurable improvements. The system was optimized to achieve a **40% reduction in overall token consumption** while maintaining a classification accuracy of **over 95%** and keeping average response times **under 2 seconds**.
 
+### Key Performance Metrics  
+
+| **Metric** | **Result** |
+|-------------|------------|
+| **Classification Accuracy** | **95%+** |
+| **Average Response Time** | **< 2 seconds** |
+| **Token Efficiency** | **40% reduction** |
+
+
 | Metric Comparison | Standard Pipeline | Simplified (Optimized) Pipeline | Outcome |
 | :--- | :---: | :---: | :---: |
 | **Avg. Tokens (Query Pre-processing)**| ~1,450 tokens | **0 tokens** | ✅ **Drastic Cost Reduction** |
@@ -168,76 +177,6 @@ The Phoenix UI provides critical insights for debugging and continuous improveme
 </table>
 
 This level of detailed tracing is essential for building robust, production-grade AI systems, transforming a functional prototype into an efficient and reliable application.
-
----
-
-## Performance Optimizations and Monitoring
-
-### Token Efficiency
-- **Simplified Routing** → Token usage reduced from 250+ → ~130 per classification.
-- **Smart Retrieval** → Semantic search without metadata saves ~1500 tokens.
-- **Context Optimization** → Dynamic context window management.
-
----
-
-### Monitoring & Analytics
-**Real-time Observability & Cost Tracking**
-- Token usage per query
-- Model cost optimization
-- Performance vs. cost trade-off analysis
-
-
-### Real-time Monitoring
-<table>
-  <tr>
-    <td><img src="optimizing_chatbot/images/trace_view_36_queries.png" width="600" height="900"></td>
-    <td><img src="optimizing_chatbot/images/q4_trace_details.png" width="600" height="900"></td>
-  </tr>
-  <tr>
-    <td><img src="optimizing_chatbot/images/faq_prod_labeling_token_comp.png" width="600" height="900"></td>
-    <td><img src="optimizing_chatbot/images/traces.png" width="600" height="900"></td>
-  </tr>
-</table>
-
----
-
-### 📊 Key Performance Metrics  
-
-| **Metric** | **Result** |
-|-------------|------------|
-| **Classification Accuracy** | **95%+** |
-| **Average Response Time** | **< 2 seconds** |
-| **Token Efficiency** | **40% reduction** |
-
----
-
-## 🔬 Optimization & Observability Analysis
-
-A key focus of this project was to analyze and optimize the RAG pipeline's performance and cost. By implementing Arize Phoenix, we gained deep insights into every component.
-
-### The Challenge: Cost vs. Performance
-
-The initial "Standard" RAG pipeline used an LLM to generate detailed metadata filters for every product query. While highly accurate, this approach was token-intensive and slow.
-
-### The Solution: A Simplified, Hybrid Approach
-
-We introduced a "Simplified" pipeline that bypasses LLM-based filter generation for most queries, relying instead on direct semantic search. This dramatically reduces cost and latency.
-
-| Metric Comparison | Standard Pipeline | Simplified Pipeline | Outcome |
-| :--- | :---: | :---: | :---: |
-| **Avg. Tokens (Query Pre-processing)**| ~1,450 tokens | **0 tokens** | ✅ **Drastic Cost Reduction** |
-| **Avg. Latency** | High | **Low** | ✅ **Faster Responses** |
-| **Accuracy** | Very High | High | ☑️ **Acceptable Trade-off** |
-
-### Phoenix Tracing in Action
-
-The Phoenix dashboard provides a granular view of the entire request lifecycle, from the initial query routing to the final LLM generation.
-
-| | |
-| :---: | :---: |
-| ![Full Trace](optimizing_chatbot/images/trace_view_34.png) | ![Trace Details](optimizing_chatbot/images/q1_trace_details.png) |
-
-This level of observability is critical for building production-ready AI systems, enabling continuous improvement and robust debugging.
 
 ---
 
