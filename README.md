@@ -150,6 +150,35 @@ graph TD
 
 ---
 
+## 🔬 Optimization & Observability Analysis
+
+A key focus of this project was to analyze and optimize the RAG pipeline's performance and cost. By implementing Arize Phoenix, we gained deep insights into every component.
+
+### The Challenge: Cost vs. Performance
+
+The initial "Standard" RAG pipeline used an LLM to generate detailed metadata filters for every product query. While highly accurate, this approach was token-intensive and slow.
+
+### The Solution: A Simplified, Hybrid Approach
+
+We introduced a "Simplified" pipeline that bypasses LLM-based filter generation for most queries, relying instead on direct semantic search. This dramatically reduces cost and latency.
+
+| Metric Comparison | Standard Pipeline | Simplified Pipeline | Outcome |
+| :--- | :---: | :---: | :---: |
+| **Avg. Tokens (Query Pre-processing)**| ~1,450 tokens | **0 tokens** | ✅ **Drastic Cost Reduction** |
+| **Avg. Latency** | High | **Low** | ✅ **Faster Responses** |
+| **Accuracy** | Very High | High | ☑️ **Acceptable Trade-off** |
+
+### Phoenix Tracing in Action
+
+The Phoenix dashboard provides a granular view of the entire request lifecycle, from the initial query routing to the final LLM generation.
+
+| | |
+| :---: | :---: |
+| ![Full Trace](optimizing_chatbot/images/trace_view_34.png) | ![Trace Details](optimizing_chatbot/images/q1_trace_details.png) |
+
+This level of observability is critical for building production-ready AI systems, enabling continuous improvement and robust debugging.
+
+---
 
 
 ## 💻 Technology Stack
@@ -237,57 +266,10 @@ Follow these steps to set up and run the project locally.
 
 ---
 
-## 🔬 Optimization & Observability Analysis
 
-A key focus of this project was to analyze and optimize the RAG pipeline's performance and cost. By implementing Arize Phoenix, we gained deep insights into every component.
+## Future Work
 
-### The Challenge: Cost vs. Performance
-
-The initial "Standard" RAG pipeline used an LLM to generate detailed metadata filters for every product query. While highly accurate, this approach was token-intensive and slow.
-
-### The Solution: A Simplified, Hybrid Approach
-
-We introduced a "Simplified" pipeline that bypasses LLM-based filter generation for most queries, relying instead on direct semantic search. This dramatically reduces cost and latency.
-
-| Metric Comparison | Standard Pipeline | Simplified Pipeline | Outcome |
-| :--- | :---: | :---: | :---: |
-| **Avg. Tokens (Query Pre-processing)**| ~1,450 tokens | **0 tokens** | ✅ **Drastic Cost Reduction** |
-| **Avg. Latency** | High | **Low** | ✅ **Faster Responses** |
-| **Accuracy** | Very High | High | ☑️ **Acceptable Trade-off** |
-
-### Phoenix Tracing in Action
-
-The Phoenix dashboard provides a granular view of the entire request lifecycle, from the initial query routing to the final LLM generation.
-
-| Full Trace View of a Query | Detailed Span for a Router LLM Call |
-| :---: | :---: |
-| ![Full Trace](optimizing_chatbot/images/traces.png) | ![Trace Details](optimizing_chatbot/images/q1_trace_details.png) |
-
-This level of observability is critical for building production-ready AI systems, enabling continuous improvement and robust debugging.
-
----
-
-## 📈 Future Work
-
-* **Implement a Reranker:** Add a reranking model (e.g., `BGE-Reranker`) after the retrieval step to further improve the relevance of the documents sent to the LLM.
 * **Knowledge Graph Integration**: Build a knowledge graph of fashion items and styles to answer more complex, multi-hop questions (e.g., "Find me shoes that match the summer dress I bought last month").
 * **Fine-tuning**: Fine-tune a smaller, open-source LLM on the specific conversational data from the fashion domain to improve response quality and reduce reliance on larger models.
-* **Stateful Conversations**: Enhance the chatbot to maintain conversation history and context across multiple turns for a more natural dialogue flow.
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to open an issue or submit a pull request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
