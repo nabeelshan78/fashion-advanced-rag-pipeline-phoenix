@@ -1,5 +1,6 @@
 # 👗 Fashion Forward RAG Chatbot: An Intelligent AI Shopping Assistant
 
+
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Frameworks](https://img.shields.io/badge/Frameworks-Gradio%20%7C%20Flask-green.svg)](https://gradio.app/)
 [![Database](https://img.shields.io/badge/Vector%20DB-Weaviate-orange.svg)](https://weaviate.io/)
