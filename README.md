@@ -11,6 +11,9 @@ An advanced, end-to-end Retrieval-Augmented Generation (RAG) system that powers 
 
 ---
 
+
+
+
 ### 🌟 Live Demo
 
 Here is a glimpse of the AI Shopping Assistant in action, built with Gradio for a seamless user experience.
@@ -27,6 +30,9 @@ Here is a glimpse of the AI Shopping Assistant in action, built with Gradio for 
 </table>
 
 ---
+
+
+
 
 
 ## ✨ Key Features
