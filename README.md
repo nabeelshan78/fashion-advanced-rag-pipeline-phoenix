@@ -6,6 +6,7 @@
 [![Observability](https://img.shields.io/badge/Tracing-Arize%20Phoenix-red.svg)](https://phoenix.arize.com/)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
+
 An advanced, end-to-end Retrieval-Augmented Generation (RAG) system that powers a conversational AI assistant for a fashion retail store. This project goes beyond a simple chatbot implementation by incorporating **intelligent task routing, dynamic parameter tuning, and a robust observability pipeline for performance and cost optimization**.
 
 ---
@@ -105,8 +106,10 @@ graph TD
     D -- "trace" --> G
     E -- "trace" --> G
 ```
-
 ---
+
+
+
 
 ## 🔬 End-to-End Optimization & Observability
 
@@ -181,6 +184,8 @@ This level of detailed tracing is essential for building robust, production-grad
 ---
 
 
+
+
 ## 💻 Technology Stack
 
 | Category | Technology |
@@ -195,6 +200,8 @@ This level of detailed tracing is essential for building robust, production-grad
 
 
 ---
+
+
 
 ## 📂 Project Structure
 
