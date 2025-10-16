@@ -53,6 +53,9 @@ Here is a glimpse of the AI Shopping Assistant in action, built with Gradio for 
 
 ---
 
+
+
+
 ## 🛠️ System Architecture
 
 The project follows a modular RAG architecture where each component is specialized for a specific task. The data flows from the user interface through the routing and retrieval logic, culminating in a context-aware response from the LLM. The entire process is monitored by Phoenix.
