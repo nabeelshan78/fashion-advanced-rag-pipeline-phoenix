@@ -56,6 +56,7 @@ Here is a glimpse of the AI Shopping Assistant in action, built with Gradio for 
 
 
 
+
 ## 🛠️ System Architecture
 
 The project follows a modular RAG architecture where each component is specialized for a specific task. The data flows from the user interface through the routing and retrieval logic, culminating in a context-aware response from the LLM. The entire process is monitored by Phoenix.
@@ -212,6 +213,7 @@ This level of detailed tracing is essential for building robust, production-grad
 
 
 
+
 ## 📂 Project Structure
 
 ```
@@ -284,6 +286,8 @@ Follow these steps to set up and run the project locally.
     The notebook will also provide a URL to view the tracing data in the Phoenix UI, allowing you to monitor your chatbot's performance in real-time.
 
 ---
+
+
 
 
 ## Future Work
