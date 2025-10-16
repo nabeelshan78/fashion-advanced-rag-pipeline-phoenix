@@ -30,13 +30,13 @@ Here is a glimpse of the AI Shopping Assistant in action, built with Gradio for 
 
 ## ✨ Key Features
 
-* **🧠 Intelligent Task Routing**: The system first classifies a user's query to determine intent:
+* **Intelligent Task Routing**: The system first classifies a user's query to determine intent:
     * **Product vs. FAQ**: Routes the query to either the product database or the FAQ knowledge base.
     * **Creative vs. Technical**: Further classifies product queries to tailor the LLM's response style. Creative queries (e.g., "suggest an outfit") use higher `temperature` for imaginative answers, while technical queries (e.g., "do you have blue shirts?") use lower `temperature` for factual precision.
-* **🚀 Optimized RAG Pipeline**: Implements two distinct RAG strategies:
+* **Optimized RAG Pipeline**: Implements two distinct RAG strategies:
     * **Standard Pipeline**: A comprehensive approach using an LLM to generate metadata filters from the query, followed by a filtered vector search.
     * **Simplified Pipeline**: A cost- and latency-optimized approach that uses direct vector search, significantly reducing token consumption.
-* **📊 End-to-End Observability**: Integrated with **Arize Phoenix** to **trace every step of the RAG pipeline**. This allows for in-depth analysis of:
+* **End-to-End Observability**: Integrated with **Arize Phoenix** to **trace every step of the RAG pipeline**. This allows for in-depth analysis of:
     * **Cost Management**: Tracking token usage and cost per query for different models and prompts.
     * **Latency Monitoring**: Identifying and optimizing bottlenecks in the pipeline.
     * **Performance Evaluation**: Debugging LLM and retriever outputs to improve accuracy.
